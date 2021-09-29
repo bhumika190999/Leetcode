@@ -1,3 +1,3 @@
 # Leetcode
-Simple small practice probelms solutions
+Simple small practice problems solutions
 
