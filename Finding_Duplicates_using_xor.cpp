@@ -22,23 +22,25 @@ Constraints:
 -109 <= nums[i] <= 109*/
 
 //solution
-
+#include <iostream>
+#include <vector>
 int main() {
     int size;
     cin>>size;
-    int a[size];
+    vector <int> a;
     for(int i=0;i<size;++i)
     {
-        cin>>a[i];
+        int input;
+        a.push_back(input);
     }
     int ans =0;
-    for(int i = 0;i<4;++i)
+    for(int i = 0;i<size;++i)
     {
      ans = ans^ a[i];
     }
-    for(int i= 0;i<4;++i)
+    for(int i= 0;i<size;++i)
     {
-        ans = ans ^ a[i];
+        ans = ans ^ i;
     }
     if(ans == 0)
     {
